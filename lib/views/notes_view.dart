@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:notes_app/widget/button_card.dart';
 import 'package:notes_app/widget/custom_app_bar.dart';
 import 'package:notes_app/widget/note_card.dart';
 import 'package:notes_app/widget/note_listview.dart';
@@ -29,9 +30,15 @@ class NotesView extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.grey[900],
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+              context: context, builder: (context) => ButtonCard());
+        },
         child: FaIcon(
-                FontAwesomeIcons.penToSquare,
+          FontAwesomeIcons.penToSquare,
           size: 38,
         ),
       ),
