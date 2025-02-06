@@ -1,10 +1,42 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ButtonCard extends StatelessWidget {
   const ButtonCard({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 20),
+      child: Column(
+        children: [
+          SizedBox(
+            height: 20,
+          ),
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              hintText: 'Title',
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          TextField(
+            minLines: 6,
+            maxLines: 19,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              hintText: 'Your task',
+            ),
+          ),
+          
+        ],
+      ),
+    );
   }
 }
