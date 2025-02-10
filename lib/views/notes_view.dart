@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:notes_app/widget/button_card.dart';
 import 'package:notes_app/widget/custom_app_bar.dart';
-import 'package:notes_app/widget/note_card.dart';
 import 'package:notes_app/widget/note_listview.dart';
 
 class NotesView extends StatelessWidget {
