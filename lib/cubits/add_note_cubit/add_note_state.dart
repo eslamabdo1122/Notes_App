@@ -9,7 +9,7 @@ class AddNoteFailure extends AddNoteState {
   final String errMessage;
   
   AddNoteFailure({required this.errMessage});
-  
-  @override
-  String toString() => 'AddNoteFailure(errMessage: $errMessage)';
+
+  // @override
+  // String toString() => 'AddNoteFailure(errMessage: $errMessage)';
 }
